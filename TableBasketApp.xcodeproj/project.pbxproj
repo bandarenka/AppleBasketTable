@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		84554ED71BBD57AC0062276F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84554ED61BBD57AC0062276F /* main.m */; };
 		84554EDA1BBD57AC0062276F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84554ED91BBD57AC0062276F /* AppDelegate.m */; };
-		84554EDD1BBD57AC0062276F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84554EDC1BBD57AC0062276F /* ViewController.m */; };
 		84554EE01BBD57AC0062276F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84554EDE1BBD57AC0062276F /* Main.storyboard */; };
 		84554EE21BBD57AC0062276F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84554EE11BBD57AC0062276F /* Images.xcassets */; };
 		84554EE51BBD57AC0062276F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84554EE31BBD57AC0062276F /* LaunchScreen.xib */; };
 		84554EF11BBD57AC0062276F /* TableBasketAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84554EF01BBD57AC0062276F /* TableBasketAppTests.m */; };
+		84554EFF1BBD5A480062276F /* FruitTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84554EFE1BBD5A480062276F /* FruitTableViewController.m */; };
+		84554F021BBD5A980062276F /* FruitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84554F011BBD5A980062276F /* FruitTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		84554ED61BBD57AC0062276F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84554ED81BBD57AC0062276F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84554ED91BBD57AC0062276F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84554EDB1BBD57AC0062276F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84554EDC1BBD57AC0062276F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84554EDF1BBD57AC0062276F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84554EE11BBD57AC0062276F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84554EE41BBD57AC0062276F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		84554EEA1BBD57AC0062276F /* TableBasketAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableBasketAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84554EEF1BBD57AC0062276F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84554EF01BBD57AC0062276F /* TableBasketAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableBasketAppTests.m; sourceTree = "<group>"; };
+		84554EFD1BBD5A480062276F /* FruitTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitTableViewController.h; sourceTree = "<group>"; };
+		84554EFE1BBD5A480062276F /* FruitTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitTableViewController.m; sourceTree = "<group>"; };
+		84554F001BBD5A980062276F /* FruitTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitTableViewCell.h; sourceTree = "<group>"; };
+		84554F011BBD5A980062276F /* FruitTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +86,14 @@
 			children = (
 				84554ED81BBD57AC0062276F /* AppDelegate.h */,
 				84554ED91BBD57AC0062276F /* AppDelegate.m */,
-				84554EDB1BBD57AC0062276F /* ViewController.h */,
-				84554EDC1BBD57AC0062276F /* ViewController.m */,
 				84554EDE1BBD57AC0062276F /* Main.storyboard */,
 				84554EE11BBD57AC0062276F /* Images.xcassets */,
 				84554EE31BBD57AC0062276F /* LaunchScreen.xib */,
 				84554ED41BBD57AC0062276F /* Supporting Files */,
+				84554EFD1BBD5A480062276F /* FruitTableViewController.h */,
+				84554EFE1BBD5A480062276F /* FruitTableViewController.m */,
+				84554F001BBD5A980062276F /* FruitTableViewCell.h */,
+				84554F011BBD5A980062276F /* FruitTableViewCell.m */,
 			);
 			path = TableBasketApp;
 			sourceTree = "<group>";
@@ -219,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84554EDD1BBD57AC0062276F /* ViewController.m in Sources */,
+				84554F021BBD5A980062276F /* FruitTableViewCell.m in Sources */,
 				84554EDA1BBD57AC0062276F /* AppDelegate.m in Sources */,
+				84554EFF1BBD5A480062276F /* FruitTableViewController.m in Sources */,
 				84554ED71BBD57AC0062276F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

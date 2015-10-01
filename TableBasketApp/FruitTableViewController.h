@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FruitTableViewController.h
 //  TableBasketApp
 //
 //  Created by Admin on 01.10.15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface FruitTableViewController : UITableViewController
+@property NSArray *fruits;
 @end
-
