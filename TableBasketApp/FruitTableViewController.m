@@ -8,6 +8,10 @@
 
 #import "FruitTableViewController.h"
 #import "FruitTableViewCell.h"
+#import "FruitDetailViewController.h"
+#import "AppDelegate.h"
+#import "Basket.h"
+#import "Iterator.h"
 @interface FruitTableViewController ()
 
 @end
@@ -17,7 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _fruits = @[@"a", @"b", @"c"];
+    AppDelegate *myDelegate = [[UIApplication sharedApplication] delegate];
+    id<Iterator> iterator = [myDelegate.basket getIterator];
+    _fruits = [[NSMutableArray alloc] init];
+    
+    while ([iterator hasNext]) {
+        [_fruits addObject:[iterator next]];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,9 +56,21 @@
     
     // Configure the cell...
     long row = [indexPath row];
-    [cell.fruitNameLabel setText:_fruits[row]];
+    [cell.fruitNameLabel setText:[_fruits[row] showName]];
     return cell;
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"ShowFruitDetail"]) {
+        FruitDetailViewController * detailViewController = [segue destinationViewController];
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+        long row = [myIndexPath row];
+        detailViewController.fruitDescription = [_fruits[row] showDetailsInString];
+    }
+}
+
 
 
 /*

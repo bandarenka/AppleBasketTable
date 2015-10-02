@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FruitTableViewController : UITableViewController
-@property NSArray *fruits;
+@property NSMutableArray *fruits;
 @end

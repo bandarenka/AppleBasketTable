@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zR6-Ml-U5e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JXs-Nx-vLI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -13,13 +13,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fruitTableCell" id="3L6-mA-Z9K" customClass="FruitTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="fruitTableCell" id="3L6-mA-Z9K" customClass="FruitTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3L6-mA-Z9K" id="hDh-JR-PS8">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8M-5T-2Xs">
-                                            <rect key="frame" x="33" y="8" width="42" height="21"/>
+                                            <rect key="frame" x="32" y="8" width="441" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -28,6 +28,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="fruitNameLabel" destination="R8M-5T-2Xs" id="bne-sB-1vu"/>
+                                    <segue destination="Yxe-Lv-dKg" kind="push" identifier="ShowFruitDetail" id="gns-TD-YJj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -36,10 +37,59 @@
                             <outlet property="delegate" destination="zR6-Ml-U5e" id="Vr5-eu-crz"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="kqO-sY-y6p"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2s-28-s7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="308"/>
+            <point key="canvasLocation" x="1262" y="312"/>
+        </scene>
+        <!--Fruit Detail View Controller-->
+        <scene sceneID="bIx-fI-Aix">
+            <objects>
+                <viewController id="Yxe-Lv-dKg" customClass="FruitDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XoM-1u-ccI"/>
+                        <viewControllerLayoutGuide type="bottom" id="5jr-1O-9KF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZaD-ei-J44">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXV-3X-ZVG">
+                                <rect key="frame" x="91" y="89" width="418" height="503"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M5l-2q-KrL"/>
+                    <connections>
+                        <outlet property="fruitDescriptionLabel" destination="jXV-3X-ZVG" id="YPT-83-hyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGW-wY-8Qk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1978" y="312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TON-On-pWi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JXs-Nx-vLI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Abr-hn-pgf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zR6-Ml-U5e" kind="relationship" relationship="rootViewController" id="Odg-hE-eRP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fm3-I8-AvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450" y="312"/>
         </scene>
     </scenes>
 </document>

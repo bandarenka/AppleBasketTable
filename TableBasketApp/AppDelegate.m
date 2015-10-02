@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Apple.h"
+#import "Orange.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    _basket = [[Basket alloc] init];
+    for(int i = 0; i < 8; ++i) {
+        [_basket addFruit:[[Apple alloc] init]];
+    }
+    
+    for(int i = 0; i < 4; ++i) {
+        [_basket addFruit:[[Orange alloc] init]];
+    }
+
     return YES;
 }
 

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844E3F881BBD711C00FE5FAA /* BasketIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E3F871BBD711C00FE5FAA /* BasketIterator.m */; };
+		844E3F941BBD717A00FE5FAA /* AdditionalTypes.c in Sources */ = {isa = PBXBuildFile; fileRef = 844E3F891BBD717A00FE5FAA /* AdditionalTypes.c */; };
+		844E3F951BBD717A00FE5FAA /* Apple.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E3F8C1BBD717A00FE5FAA /* Apple.m */; };
+		844E3F961BBD717A00FE5FAA /* Basket.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E3F8E1BBD717A00FE5FAA /* Basket.m */; };
+		844E3F971BBD717A00FE5FAA /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E3F901BBD717A00FE5FAA /* Fruit.m */; };
+		844E3F981BBD717A00FE5FAA /* Orange.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E3F931BBD717A00FE5FAA /* Orange.m */; };
+		844E3F9B1BBD75D400FE5FAA /* FruitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E3F9A1BBD75D400FE5FAA /* FruitDetailViewController.m */; };
 		84554ED71BBD57AC0062276F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84554ED61BBD57AC0062276F /* main.m */; };
 		84554EDA1BBD57AC0062276F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84554ED91BBD57AC0062276F /* AppDelegate.m */; };
 		84554EE01BBD57AC0062276F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84554EDE1BBD57AC0062276F /* Main.storyboard */; };
@@ -28,6 +35,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844E3F861BBD711C00FE5FAA /* BasketIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasketIterator.h; path = ../../AppleApp/BasketIterator.h; sourceTree = "<group>"; };
+		844E3F871BBD711C00FE5FAA /* BasketIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasketIterator.m; path = ../../AppleApp/BasketIterator.m; sourceTree = "<group>"; };
+		844E3F891BBD717A00FE5FAA /* AdditionalTypes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AdditionalTypes.c; path = ../../AppleApp/Tree/AdditionalTypes.c; sourceTree = "<group>"; };
+		844E3F8A1BBD717A00FE5FAA /* AdditionalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdditionalTypes.h; path = ../../AppleApp/Tree/AdditionalTypes.h; sourceTree = "<group>"; };
+		844E3F8B1BBD717A00FE5FAA /* Apple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Apple.h; path = ../../AppleApp/Tree/Apple.h; sourceTree = "<group>"; };
+		844E3F8C1BBD717A00FE5FAA /* Apple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Apple.m; path = ../../AppleApp/Tree/Apple.m; sourceTree = "<group>"; };
+		844E3F8D1BBD717A00FE5FAA /* Basket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Basket.h; path = ../../AppleApp/Tree/Basket.h; sourceTree = "<group>"; };
+		844E3F8E1BBD717A00FE5FAA /* Basket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Basket.m; path = ../../AppleApp/Tree/Basket.m; sourceTree = "<group>"; };
+		844E3F8F1BBD717A00FE5FAA /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fruit.h; path = ../../AppleApp/Tree/Fruit.h; sourceTree = "<group>"; };
+		844E3F901BBD717A00FE5FAA /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fruit.m; path = ../../AppleApp/Tree/Fruit.m; sourceTree = "<group>"; };
+		844E3F911BBD717A00FE5FAA /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Iterator.h; path = ../../AppleApp/Tree/Iterator.h; sourceTree = "<group>"; };
+		844E3F921BBD717A00FE5FAA /* Orange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Orange.h; path = ../../AppleApp/Tree/Orange.h; sourceTree = "<group>"; };
+		844E3F931BBD717A00FE5FAA /* Orange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Orange.m; path = ../../AppleApp/Tree/Orange.m; sourceTree = "<group>"; };
+		844E3F991BBD75D400FE5FAA /* FruitDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitDetailViewController.h; sourceTree = "<group>"; };
+		844E3F9A1BBD75D400FE5FAA /* FruitDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitDetailViewController.m; sourceTree = "<group>"; };
 		84554ED11BBD57AC0062276F /* TableBasketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableBasketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84554ED51BBD57AC0062276F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84554ED61BBD57AC0062276F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +106,19 @@
 		84554ED31BBD57AC0062276F /* TableBasketApp */ = {
 			isa = PBXGroup;
 			children = (
+				844E3F891BBD717A00FE5FAA /* AdditionalTypes.c */,
+				844E3F8A1BBD717A00FE5FAA /* AdditionalTypes.h */,
+				844E3F8B1BBD717A00FE5FAA /* Apple.h */,
+				844E3F8C1BBD717A00FE5FAA /* Apple.m */,
+				844E3F8D1BBD717A00FE5FAA /* Basket.h */,
+				844E3F8E1BBD717A00FE5FAA /* Basket.m */,
+				844E3F8F1BBD717A00FE5FAA /* Fruit.h */,
+				844E3F901BBD717A00FE5FAA /* Fruit.m */,
+				844E3F911BBD717A00FE5FAA /* Iterator.h */,
+				844E3F921BBD717A00FE5FAA /* Orange.h */,
+				844E3F931BBD717A00FE5FAA /* Orange.m */,
+				844E3F861BBD711C00FE5FAA /* BasketIterator.h */,
+				844E3F871BBD711C00FE5FAA /* BasketIterator.m */,
 				84554ED81BBD57AC0062276F /* AppDelegate.h */,
 				84554ED91BBD57AC0062276F /* AppDelegate.m */,
 				84554EDE1BBD57AC0062276F /* Main.storyboard */,
@@ -94,6 +129,8 @@
 				84554EFE1BBD5A480062276F /* FruitTableViewController.m */,
 				84554F001BBD5A980062276F /* FruitTableViewCell.h */,
 				84554F011BBD5A980062276F /* FruitTableViewCell.m */,
+				844E3F991BBD75D400FE5FAA /* FruitDetailViewController.h */,
+				844E3F9A1BBD75D400FE5FAA /* FruitDetailViewController.m */,
 			);
 			path = TableBasketApp;
 			sourceTree = "<group>";
@@ -224,8 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844E3F9B1BBD75D400FE5FAA /* FruitDetailViewController.m in Sources */,
+				844E3F971BBD717A00FE5FAA /* Fruit.m in Sources */,
+				844E3F951BBD717A00FE5FAA /* Apple.m in Sources */,
+				844E3F941BBD717A00FE5FAA /* AdditionalTypes.c in Sources */,
+				844E3F881BBD711C00FE5FAA /* BasketIterator.m in Sources */,
 				84554F021BBD5A980062276F /* FruitTableViewCell.m in Sources */,
 				84554EDA1BBD57AC0062276F /* AppDelegate.m in Sources */,
+				844E3F961BBD717A00FE5FAA /* Basket.m in Sources */,
+				844E3F981BBD717A00FE5FAA /* Orange.m in Sources */,
 				84554EFF1BBD5A480062276F /* FruitTableViewController.m in Sources */,
 				84554ED71BBD57AC0062276F /* main.m in Sources */,
 			);
@@ -422,6 +466,7 @@
 				84554EF61BBD57AC0062276F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84554EF71BBD57AC0062276F /* Build configuration list for PBXNativeTarget "TableBasketAppTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +475,7 @@
 				84554EF91BBD57AC0062276F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
